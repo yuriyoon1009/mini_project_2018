@@ -1,0 +1,25 @@
+{
+  "name": "sharekim",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "nodemon router.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "font-awesome": "^4.7.0",
+    "less": "^2.7.3",
+    "less-express": "^1.1.0",
+    "less-middleware": "^2.2.1",
+    "pug": "^2.0.0-rc.4",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}

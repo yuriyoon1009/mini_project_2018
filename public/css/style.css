@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@import url("./normalize.css");
+@import url("./reset.css");
+/* 기본 box-sizing 재설정 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+.readable-hidden {
+  display: none; }
+
+/* 링크 스타일 */
+a {
+  text-decoration: none; }
+  a:link, a:visited {
+    color: inherit; }
+
+#wrap {
+  max-width: 370px;
+  font-family: 'Noto Sans', sans-serif; }
+
+header {
+  width: 100%;
+  height: 50px;
+  background: #2C5A8F;
+  /* box-shadow: 0px 6px 5px 0px rgba(44, 90, 143, 1);*/
+  /* box-shadow: 0 0 15px 0 rgba(74, 72, 74, 0.8); */ }
+  header h1 {
+    color: #fff;
+    font-weight: 900;
+    line-height: 50px;
+    width: 48%;
+    height: 50px;
+    padding-left: 2%;
+    float: left;
+    /*background: red;*/ }
+  header p {
+    width: 7%;
+    float: left;
+    padding-left: 43%; }
+    header p .fa {
+      color: #fff;
+      width: 40px;
+      line-height: 50px; }
+  header:after {
+    display: block;
+    clear: both;
+    content: ''; }
+
+.nav_main {
+  width: 100%;
+  height: 38.4615384615px;
+  background: #3B78BF;
+  /*background: linear-gradient(to bottom, #1e3d62 0%, $sub-color 99.9%, $sub-color 100%);*/
+  border-bottom: 3px solid #aaa; }
+  .nav_main .inner_menu {
+    width: 100%; }
+    .nav_main .inner_menu ul {
+      display: flex;
+      justify-content: space-around;
+      color: #fff;
+      line-height: 38.4615384615px;
+      font-weight: 900;
+      /* overflow: hidden;*/ }
+      .nav_main .inner_menu ul li {
+        text-align: center;
+        height: 100%;
+        width: 33.33%; }
+        .nav_main .inner_menu ul li.selected {
+          position: relative; }
+          .nav_main .inner_menu ul li.selected:after {
+            width: 100%;
+            height: 8px;
+            display: block;
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: #aaa; }
+
+#screen {
+  width: 100%;
+  height: 200px;
+  background: url(../images/2.jpg) no-repeat 0;
+  background-size: cover;
+  position: relative; }
+  #screen .main_screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4); }
+    #screen .main_screen dl {
+      color: #fff;
+      font-weight: 900; }
+      #screen .main_screen dl dt {
+        font-size: 20px;
+        height: 30px;
+        line-height: 30px;
+        text-indent: 20px; }
+      #screen .main_screen dl .ad {
+        font-size: 14px;
+        height: 140px;
+        padding-top: 50px;
+        text-align: center; }
+      #screen .main_screen dl .link {
+        font-size: 14px;
+        padding-right: 5%;
+        text-align: right; }
+
+#house_list_section {
+  color: #fff;
+  background: #aaa;
+  width: 100%; }
+  #house_list_section .house_list_wrap {
+    width: 90%;
+    margin: 0 auto; }
+    #house_list_section .house_list_wrap .list_tit {
+      line-height: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: space-between; }
+    #house_list_section .house_list_wrap .house_list ul {
+      width: 100%; }
+      #house_list_section .house_list_wrap .house_list ul li {
+        width: 100%;
+        height: 80px;
+        border: 1px solid #fff;
+        background: url(../images/2.jpg) no-repeat 0;
+        margin-bottom: 10px;
+        position: relative; }
+        #house_list_section .house_list_wrap .house_list ul li dl {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          padding-top: 8px;
+          background: rgba(0, 0, 0, 0.4); }
+          #house_list_section .house_list_wrap .house_list ul li dl dd {
+            width: 90%;
+            margin: 0 auto;
+            overflow: hidden; }
+          #house_list_section .house_list_wrap .house_list ul li dl .tit {
+            /*background: red;*/ }
+            #house_list_section .house_list_wrap .house_list ul li dl .tit p {
+              width: 50%;
+              float: left; }
+              #house_list_section .house_list_wrap .house_list ul li dl .tit p:last-child {
+                text-align: right; }
+          #house_list_section .house_list_wrap .house_list ul li dl .info {
+            /*background:green;*/ }
+            #house_list_section .house_list_wrap .house_list ul li dl .info p {
+              width: 33.33%;
+              float: left;
+              text-align: center; }
+              #house_list_section .house_list_wrap .house_list ul li dl .info p span {
+                display: inline-block;
+                vertical-align: 5px;
+                text-indent: 5px; }
+          #house_list_section .house_list_wrap .house_list ul li dl .address {
+            /* background:blue;*/ }
+            #house_list_section .house_list_wrap .house_list ul li dl .address p {
+              width: 50%;
+              float: left;
+              font-size: 12px; }
+              #house_list_section .house_list_wrap .house_list ul li dl .address p:last-child {
+                text-align: right; }
